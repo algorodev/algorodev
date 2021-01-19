@@ -1,0 +1,38 @@
+const project = require('../models/Project.js');
+
+const ProjectController = {
+    async create(req, res) {
+        try {
+            let project = await project.create(req.body);
+            res.status(201).send(project);
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    },
+    async read(req, res) {
+        try {
+            let projects = await project.find({ });
+            res.status(200).send(projects);
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    },
+    async update(req, res) {
+        try {
+            let projectUpdated = await project.findByIdAndUpdate(req.body._id, req.body);
+            res.status(201).send(projectUpdated);
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    },
+    async delete(req, res) {
+        try {
+            let projectDeleted = await project.findByIdAndDelete(req.body._id);
+            res.status(201).send(projectDeleted);
+        } catch (error) {
+            res.status(500).send(500);
+        }
+    }
+};
+
+module.exports = ProjectController;
