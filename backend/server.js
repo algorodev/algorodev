@@ -3,6 +3,8 @@ const morgan = require('morgan');
 
 const cors = require('./middlewares/cors.js');
 
+const ProjectRouter = require('./routes/ProjectRouter.js');
+
 require('dotenv').config();
 const app = express();
 
@@ -16,6 +18,9 @@ app.use(express.urlencoded({
 );
 app.use(express.json());
 app.use(cors);
+
+// ENDPOINTS
+app.use('/project', ProjectRouter);
 
 // LISTENER
 app.listen(PORT, () => {
