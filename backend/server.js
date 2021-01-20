@@ -6,6 +6,7 @@ const cors = require('./middlewares/cors.js');
 const BookRouter = require('./routes/BookRouter.js');
 const ContactRouter = require('./routes/ContactRouter.js');
 const CourseRouter = require('./routes/CourseRouter.js');
+const JobRouter = require('./routes/JobRouter.js');
 const ProjectRouter = require('./routes/ProjectRouter.js');
 
 require('dotenv').config();
@@ -38,6 +39,7 @@ app.use(cors);
 app.use('/book', BookRouter);
 app.use('/contact', ContactRouter);
 app.use('/course', CourseRouter);
+app.use('/job', JobRouter);
 app.use('/project', ProjectRouter);
 
 // LISTENER
