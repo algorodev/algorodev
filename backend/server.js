@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 const cors = require('./middlewares/cors.js');
 const ProjectRouter = require('./routes/ProjectRouter.js');
+const ContactRouter = require('./routes/ContactRouter.js');
 
 require('dotenv').config();
 const app = express();
@@ -32,6 +33,7 @@ app.use(express.json());
 app.use(cors);
 
 // ENDPOINTS
+app.use('/contact', ContactRouter);
 app.use('/project', ProjectRouter);
 
 // LISTENER
