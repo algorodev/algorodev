@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('./middlewares/cors.js');
 const BookRouter = require('./routes/BookRouter.js');
 const ContactRouter = require('./routes/ContactRouter.js');
+const CourseRouter = require('./routes/CourseRouter.js');
 const ProjectRouter = require('./routes/ProjectRouter.js');
 
 require('dotenv').config();
@@ -36,6 +37,7 @@ app.use(cors);
 // ENDPOINTS
 app.use('/book', BookRouter);
 app.use('/contact', ContactRouter);
+app.use('/course', CourseRouter);
 app.use('/project', ProjectRouter);
 
 // LISTENER
