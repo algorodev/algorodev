@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+
+    &-track {
+      background-color: transparent;
+    }
+
+    &-thumb {
+      background-color: $main-color;
+    }
+  }
+}
