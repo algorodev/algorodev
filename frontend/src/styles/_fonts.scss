@@ -2,30 +2,35 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-weight: 900;
+  color: $black-color;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 800;
+  color: $black-color;
 }
 
 h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 700;
+  color: $black-color;
 }
 
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 600;
+  color: $black-color;
 }
 
 p {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  color: $black-color;
 
   &.important {
     font-weight: 500;
@@ -38,10 +43,12 @@ textarea{
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: $black-color;
 }
 
 small {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 300;
+  color: $black-color;
 }
