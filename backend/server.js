@@ -10,6 +10,7 @@ const DegreeRouter = require('./routes/DegreeRouter.js');
 const JobRouter = require('./routes/JobRouter.js');
 const LanguageRouter = require('./routes/LanguageRouter.js');
 const ProjectRouter = require('./routes/ProjectRouter.js');
+const TestimonialRouter = require('./routes/TestimonialRouter.js');
 
 require('dotenv').config();
 const app = express();
@@ -45,6 +46,7 @@ app.use('/degree', DegreeRouter);
 app.use('/job', JobRouter);
 app.use('/language', LanguageRouter);
 app.use('/project', ProjectRouter);
+app.use('/testimonial', TestimonialRouter);
 
 // LISTENER
 app.listen(PORT, () => {
