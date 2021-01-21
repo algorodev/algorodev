@@ -14,5 +14,5 @@ const Language = new mongoose.Schema(
     {timestamps: true}
 );
 
-const model = mongoose.model('Language', Language);
-module.exports = model;
+const LanguageModel = mongoose.model('Language', Language);
+module.exports = LanguageModel;
