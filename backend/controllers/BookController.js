@@ -1,9 +1,9 @@
-const book = require('../models/Book.js');
+const BookModel = require('../models/Book.js');
 
 const BookController = {
     async create(req, res) {
         try {
-            let book = await book.create(req.body);
+            let book = await BookModel.create(req.body);
             res.status(201).send(book);
         } catch (error) {
             res.status(500).send(error);
@@ -11,7 +11,7 @@ const BookController = {
     },
     async read(req, res) {
         try {
-            let books = await book.find({ });
+            let books = await BookModel.find({ });
             res.status(200).send(books);
         } catch (error) {
             res.status(500).send(error);
@@ -19,7 +19,7 @@ const BookController = {
     },
     async update(req, res) {
         try {
-            let bookUpdated = await book.findByIdAndUpdate(req.body._id, req.body);
+            let bookUpdated = await BookModel.findByIdAndUpdate(req.body._id, req.body);
             res.status(201).send(bookUpdated);
         } catch (error) {
             res.status(500).send(error);
@@ -27,7 +27,7 @@ const BookController = {
     },
     async delete(req, res) {
         try {
-            let bookDeleted = await book.findByIdAndDelete(req.body._id);
+            let bookDeleted = await BookModel.findByIdAndDelete(req.body._id);
             res.status(201).send(bookDeleted);
         } catch (error) {
             res.status(500).send(500);
