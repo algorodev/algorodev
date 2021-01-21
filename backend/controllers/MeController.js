@@ -1,9 +1,9 @@
-const me = require ('../models/Me.js');
+const MeModel = require ('../models/Me.js');
 
 const MeController = {
     async create(req, res) {
         try {
-            let me = await me.create(req.body);
+            let me = await MeModel.create(req.body);
             res.status(201).send(me);
         } catch (error) {
             res.status(500).send(error);
@@ -11,7 +11,7 @@ const MeController = {
     },
     async read(req, res) {
         try {
-            let me = await me.find({ });
+            let me = await MeModel.find({ });
             res.status(200).send(me);
         } catch (error) {
             res.status(500).send(error);
@@ -19,7 +19,7 @@ const MeController = {
     },
     async update(req, res) {
         try {
-            let meUpdated = await me.findByIdAndUpdate(req.body._id, req.body);
+            let meUpdated = await MeModel.findByIdAndUpdate(req.body._id, req.body);
             res.status(201).send(meUpdated);
         } catch (error) {
             res.status(500).send(error);
@@ -27,7 +27,7 @@ const MeController = {
     },
     async delete(req, res) {
         try {
-            let meDeleted = await me.findByIdAndDelete(req.body._id);
+            let meDeleted = await MeModel.findByIdAndDelete(req.body._id);
             res.status(201).send(meDeleted);
         } catch (error) {
             res.status(500).send(500);

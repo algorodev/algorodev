@@ -34,5 +34,5 @@ const Me = new mongoose.Schema(
     {timestamps: true}
 );
 
-const model = mongoose.model('Me', Me);
-module.exports = model;
+const MeModel = mongoose.model('Me', Me);
+module.exports = MeModel;
