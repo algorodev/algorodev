@@ -9,6 +9,7 @@ const CourseRouter = require('./routes/CourseRouter.js');
 const DegreeRouter = require('./routes/DegreeRouter.js');
 const JobRouter = require('./routes/JobRouter.js');
 const LanguageRouter = require('./routes/LanguageRouter.js');
+const MeRouter = require('./routes/MeRouter.js');
 const ProjectRouter = require('./routes/ProjectRouter.js');
 const TestimonialRouter = require('./routes/TestimonialRouter.js');
 
@@ -45,6 +46,7 @@ app.use('/course', CourseRouter);
 app.use('/degree', DegreeRouter);
 app.use('/job', JobRouter);
 app.use('/language', LanguageRouter);
+app.use('/me', MeRouter);
 app.use('/project', ProjectRouter);
 app.use('/testimonial', TestimonialRouter);
 
