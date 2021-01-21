@@ -26,5 +26,5 @@ const Degree = new mongoose.Schema(
     {timestamps: true}
 );
 
-const model = mongoose.model('Degree', Degree);
-module.exports = model;
+const DegreeModel = mongoose.model('Degree', Degree);
+module.exports = DegreeModel;
