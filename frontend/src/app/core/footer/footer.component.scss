@@ -1,0 +1,22 @@
+@import "src/styles/index.scss";
+
+.container {
+  width: 70%;
+  margin: 0 auto 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  transition: 0.5s transform;
+
+  &:hover {
+    color: $white-color;
+    background-color: $main-color;
+    transform: translateY(-10px);
+    box-shadow: 0 -2px 3px $border;
+  }
+}
