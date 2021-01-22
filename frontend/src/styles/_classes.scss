@@ -1,0 +1,28 @@
+.site {
+  min-height: 100vh;
+  background-color: $background;
+}
+
+.layout {
+  flex-grow: 1;
+}
+
+.enlace {
+  padding: 5px 10px;
+  transition: 0.5s transform;
+
+  &:hover {
+    background-color: $main-color;
+    transform: translateY(-10px);
+    box-shadow: 0 -2px 3px $border;
+
+    & p {
+      color: $white-color;
+    }
+  }
+}
+
+.icon {
+  font-size: 25px;
+  color: $black-color;
+}
