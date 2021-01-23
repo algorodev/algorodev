@@ -1,18 +1,23 @@
 @import "src/styles/index.scss";
 
 .menu-item {
-  margin: 0 2.5px;
   padding: 5px 10px;
-  transition: 0.5s transform;
   cursor: pointer;
 
   &:hover {
-    background-color: $main-color;
-    transform: translateY(10px);
-    box-shadow: 0 2px 3px $border;
+    background-color: $secondary-color;
 
     & p {
       color: $white-color;
     }
+  }
+}
+
+.active {
+  background-color: $main-color;
+  transform: translateY(10px);
+
+  & p {
+    color: $white-color;
   }
 }
