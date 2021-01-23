@@ -2,6 +2,7 @@
 
 .menu-item {
   padding: 5px 10px;
+  transition: 0.5s transform;
   cursor: pointer;
 
   &:hover {
@@ -11,13 +12,13 @@
       color: $white-color;
     }
   }
-}
 
-.active {
-  background-color: $main-color;
-  transform: translateY(10px);
+  &.active {
+    background-color: $main-color;
+    transform: translateY(10px);
 
-  & p {
-    color: $white-color;
+    & p {
+      color: $white-color;
+    }
   }
 }
