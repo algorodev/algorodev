@@ -9,9 +9,4 @@ export class ContactComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  auto_grow(element): void {
-    element.style.height = '5px';
-    element.style.height = element.scrollHeight + 'px';
-  }
 }
