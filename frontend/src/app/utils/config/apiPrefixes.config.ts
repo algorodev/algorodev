@@ -1,6 +1,6 @@
 import { environment } from 'src/environments/environment';
-import { IApiPrefixes } from '@shared/interfaces/IApiPrefixes';
-import { ApiPrefixesType } from '@shared/enums/apiPrefixes-type';
+import { IApiPrefixes } from 'src/app/utils/interfaces/IApiPrefixes';
+import { ApiPrefixesType } from 'src/app/utils/enums/apiPrefixes-type';
 
 export const apiPrefix: IApiPrefixes = {
   book: ApiPrefixesType.book,
