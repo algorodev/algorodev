@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { TitleService } from '@shared/services/title.service';
+import { Component } from '@angular/core';
+
+import { TitleService } from '@core/services/title.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,8 @@ import { TitleService } from '@shared/services/title.service';
   styleUrls: ['./app.component.scss'],
   providers: [TitleService],
 })
-export class AppComponent implements OnInit {
-  constructor(private titleService: TitleService) {}
-
-  ngOnInit(): void {
+export class AppComponent {
+  constructor(private titleService: TitleService) {
     this.titleService.initializeTitleService();
   }
 }

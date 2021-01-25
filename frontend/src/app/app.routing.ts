@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactComponent } from '@contact/contact.component';
-import { HomeComponent } from '@core/home/home.component';
-import { PageNotFoundComponent } from '@core/page-not-found/page-not-found.component';
+
+import { HomeComponent } from '@shared/commons/home/home.component';
+import { PageNotFoundComponent } from '@shared/commons/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,12 +14,13 @@ const routes: Routes = [
   {
     data: { title: 'Contact' },
     path: 'contact',
-    component: ContactComponent,
+    loadChildren: () =>
+      import('@contact/contact.module').then((m) => m.ContactModule),
   },
-  { path: '**', redirectTo: '404', pathMatch: 'full' },
+  { path: '**', redirectTo: 'page-not-found', pathMatch: 'full' },
   {
     data: { title: 'Page not found' },
-    path: '404',
+    path: 'page-not-found',
     component: PageNotFoundComponent,
   },
 ];
