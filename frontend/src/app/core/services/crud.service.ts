@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { baseURL } from '@shared/config/apiPrefixes.config';
+import { baseURL } from 'src/app/utils/config/apiPrefixes.config';
 
 @Injectable({
   providedIn: 'root',
