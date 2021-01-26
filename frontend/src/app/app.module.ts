@@ -12,12 +12,12 @@ import { AppRouting } from 'src/app/app.routing';
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    AppRouting,
     ContactModule,
     CoreModule,
     BrowserModule,
     HttpClientModule,
     SharedModule,
-    AppRouting,
   ],
   providers: [],
   bootstrap: [AppComponent],
