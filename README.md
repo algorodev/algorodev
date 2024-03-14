@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Alex</h1>
-<h3 align="center">Tech-enthusiast with +5 years of experience as a programmer with quick adaptation to new challenges and responsibilities. Experience of working with tight deadlines, under time pressure while ensuring quality and with agile methodologies. I'm always curious to learn more about technologies and any kind of art, I'm a passionate about music, films and sports.</h3>
+<h3 align="center">Tech-enthusiast with +5 years of experience as a programmer with quick adaptation to new challenges and responsibilities. Experience of working with tight deadlines, under time pressure while ensuring quality and with agile methodologies. I'm always curious to learn more about technologies and any kind of art, I'm a passionate about music, films and sports. Based in Dublin.</h3>
 
-- 👨‍💻 All of my projects are available at [https://portfolio-algorodev.netlify.app/](https://portfolio-algorodev.netlify.app/)
+- 👨‍💻 All of my projects are available at [my portfolio](https://algorodev.com/)
 
-- 💬 Ask me about **Javascript and Typescript**
+- 💬 Ask me about **Javascript, Typescript or Python**
 
 - 📫 How to reach me **me@algorodev.com**
 
